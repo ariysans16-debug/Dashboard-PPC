@@ -1,0 +1,6 @@
+{
+  "name": "Sampling Pupuk SNI",
+  "description": "Aplikasi digital pengambilan sampel pupuk berbasis SNI dengan kalkulator sampling otomatis, daftar periksa SOP, generator berita acara, tanda tangan digital, dan pelacakan QR/Barcode.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@media print {
+  /* Pengaturan margin kertas @page sebesar 3cm di semua sisi */
+  @page {
+    margin: 3cm;
+  }
+
+  /* Menyembunyikan elemen navigasi dan tombol saat dicetak */
+  #navbar,
+  .btn-print,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Aturan agar elemen tertentu tidak terpotong di tengah jalan */
+  .avoid-break,
+  .break-inside-avoid {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Khusus untuk elemen tabel, pastikan baris-barisnya tidak terpotong secara paksa di tengah */
+  thead {
+    display: table-header-group !important;
+  }
+  tr {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Aturan agar bagian tertentu (seperti lampiran atau bab baru) selalu memulai halaman baru */
+  .page-break-before,
+  .break-before-page {
+    break-before: page !important;
+    page-break-before: always !important;
+  }
+}
+
